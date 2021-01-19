@@ -15,6 +15,10 @@ class CreateBikesTable extends Migration
     {
         Schema::create('bikes', function (Blueprint $table) {
             $table->id();
+            $table->string('modello', 30);
+            $table->string('marca', 30);
+            $table->string('targa', 7);
+            $table->smallInteger('cilindrata');
             $table->timestamps();
         });
     }
