@@ -14,4 +14,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'HomeController@index')->name('homepage');
-Route::get('/bike', 'BikeController@adding')->name('adding-bike');
+Route::get('/addbike', 'BikeController@adding')->name('adding-bike');
